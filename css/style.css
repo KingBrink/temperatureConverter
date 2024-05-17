@@ -2,6 +2,8 @@ body {
     background-color: #222;
     font-family: 'Press Start 2P', cursive;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -26,6 +28,7 @@ input[type="number"] {
 }
 
 select {
+    width: 100%;
     padding: 10px;
     border: 2px solid #fff;
     border-radius: 3px;
@@ -52,4 +55,12 @@ button:hover {
 p {
     margin-top: 20px;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 300px;
+        margin: 20px auto;
+        padding: 10px;
+    }
 }
